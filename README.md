@@ -3,6 +3,7 @@
 - [Cargo](#cargo)
 - [VSCODE plugins](#vscode-plugins)
 - [Build a rust program](#build-a-rust-program)
+- [Format code](#format-code)
 
 Rust is a system programming language.
 
@@ -66,4 +67,11 @@ rustc --out-dir hello hello/main.rs
 cd hello
 rustc main.rs
 ./main
+```
+
+# Format code
+
+```bash
+# format every file in directory
+ rustfmt src/*  
 ```
