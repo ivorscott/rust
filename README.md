@@ -1,6 +1,6 @@
 ## rust
 - [Install Rust](#install-rust)
-- [Check Versions](#check-versions)
+- [Cargo](#cargo)
 - [VSCODE plugins](#vscode-plugins)
 - [Build a rust program](#build-a-rust-program)
 
@@ -10,17 +10,38 @@ Rust is a system programming language.
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-# Check Versions
+# Restart current shell
 
-```bash
+# Check version of Rust compiler
 rustc --version
 rustc 1.76.0 (07dca489a 2024-02-04)
-cargo -version
-cargo 1.76.0 (c84b36747 2024-01-18)
 ```
+# Cargo
 
 Rust comes with it's own package manager called cargo.
+
+```bash
+# Rust package manager
+cargo -version
+cargo 1.76.0 (c84b36747 2024-01-18)
+
+# Initialize a new project
+cargo new hello_world
+
+# Run application
+cd hello_world
+cargo run
+
+# Build application
+cargo build
+
+# Build for production
+cargo build --release
+```
+
+`cargo new <name>` create a new package with a Cargo.toml file that track package dependencies.
+
+`cargo build --release` creates a release folder.
 
 # VSCODE plugins
 
